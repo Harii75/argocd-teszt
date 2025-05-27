@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: practive-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: practive
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: practive
-          image: busybox:latest
-          ports:
-            - containerPort: 80
+          image: busybox
+          command: ["sleep", "3600"]
+
