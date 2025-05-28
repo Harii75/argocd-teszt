@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: practive-deployment
+  namespace: practive
+  labels:
+    app: practive
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: practive
+  template:
+    metadata:
+      labels:
+        app: practive
+    spec:
+      containers:
+        - name: practive
+          image: busybox
+          command: ["sleep", "3600"]
+          imagePullPolicy: Always
+
