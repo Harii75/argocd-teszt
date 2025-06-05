@@ -7,7 +7,8 @@ metadata:
     app: practive
   annotations:
     argocd-image-updater.argoproj.io/image-list: hari75/argo-imagetest
-    argocd-image-updater.argoproj.io/hari75_argo-imagetest.update-strategy: latest
+    argocd-image-updater.argoproj.io/hari75/argo-imagetest.update-strategy: latest
+    argocd-image-updater.argoproj.io/hari75/argo-imagetest.allow-tags: regexp:.*
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd-image-updater/git-creds
 spec:
   replicas: 1
