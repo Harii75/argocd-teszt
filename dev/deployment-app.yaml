@@ -9,6 +9,7 @@ metadata:
     argocd-image-updater.argoproj.io/image-list: hari75/argo-imagetest
     argocd-image-updater.argoproj.io/hari75_argo-imagetest.update-strategy: semver
     argocd-image-updater.argoproj.io/hari75_argo-imagetest.allow-tags: regexp:^\\d+\\.0\\.0$
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd-image-updater/git-creds
 spec:
   replicas: 1
   selector:
