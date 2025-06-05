@@ -5,6 +5,10 @@ metadata:
   namespace: practive
   labels:
     app: practive
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: hari75/argo-imagetest
+    argocd-image-updater.argoproj.io/hari75_argo-imagetest.update-strategy: semver
+    argocd-image-updater.argoproj.io/hari75_argo-imagetest.allow-tags: regexp:^\\d+\\.0\\.0$
 spec:
   replicas: 1
   selector:
@@ -20,4 +24,3 @@ spec:
           image: hari75/argo-imagetest:1.0
           command: ["sleep", "3600"]
           imagePullPolicy: Always
-
