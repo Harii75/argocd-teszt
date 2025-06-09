@@ -5,11 +5,6 @@ metadata:
   namespace: practive
   labels:
     app: practive
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: appimage=hari75/argo-imagetest
-    argocd-image-updater.argoproj.io/appimage.update-strategy: latest
-    argocd-image-updater.argoproj.io/appimage.allow-tags: regexp:.*
-    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd-image-updater/git-creds
 spec:
   replicas: 1
   selector:
