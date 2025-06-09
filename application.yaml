@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha1Add commentMore actions
+apiVersion: argoproj.io/v1
 kind: Application
 metadata:
   name: practive
