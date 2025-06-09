@@ -13,8 +13,7 @@ spec:
     repoURL: https://github.com/Harii75/argocd-teszt
     targetRevision: main
     path: dev
-    directory:
-      recurse: true
+    kustomize: {}
   destination:
     server: https://kubernetes.default.svc
     namespace: practive
