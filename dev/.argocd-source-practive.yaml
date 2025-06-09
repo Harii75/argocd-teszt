@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - hari75/argo-imagetest:3.0
