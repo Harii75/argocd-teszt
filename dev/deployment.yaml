@@ -18,5 +18,5 @@ spec:
       containers:
         - name: practive
           image: hari75/argo-imagetest:1.0
-          command: ["sleep", "3600"]
+          command: ["sleep", "3500"]
           imagePullPolicy: Always
